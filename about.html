@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am Red Panda!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="hero-about">
+
+        <!-- Header Banner-->
+        <header class="about-banner">
+            <h1>Hi I am Red Panda</h1>
+            <p>Nice Meeting You!</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Portfolio</a>
+                <a href="https://achiichi.github.io/ImKanlayaneeR/" target="_blank">Student Work</a>
+                <a href="#">Hobbies</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="about-content">
+            <section class="about-profile">
+                <div class="about-sum-content">
+                    <div class="about-avatar"></div>
+                   
+                    <div class="about-info-sum">
+                        
+                        <p class="info-sum-topic">SUMMARY</p>
+                        <p class="info-sum-details">Engineer with experience in MCU, analog, and communication systems, focused on problem-solving and turning complex ideas into practical solutions. Skilled in collaboration and continuous learning.</p>
+                        
+                        <div class="about-info-divider"></div>
+                        <p class="info-closing">Open to all roles</p>
+                        
+                    </div>
+
+                    <a href="Resume_v1_draf.pdf" target="_blank">
+                        <button class="resume-button">Resume</button>
+                    </a>
+                </div>
+                <div class="about-main-content">
+                    <div class="about-main-upper">
+                        <div class="experience">
+                            <p class="experience-topic">WORK EXPERIENCE</p>
+                            <div class="experience-details">
+                                <div class="experience-sub">
+                                    <div class = "experience-sub-left">
+                                        <p class="experience-position">Field Application Engineer</p>
+                                        <p class="experience-company">Electronics Source Co.,Ltd</p>
+                                    </div>
+                                    <div class = "experience-sub-right">
+                                        <p class="experience-date">Nov 2022 - Present</p>
+                                    </div>
+                                </div>
+                                <p class="experience-specifics">• Provide technical support for MCU, analog, and connectivity solutions.</p>
+                                <p class="experience-specifics">• Collaborate with R&D and suppliers to resolve customer issues and deliver alternative solutions.</p>
+                                <p class="experience-specifics">• Conduct product training, lectures, and hands-on workshops for customers and internal sales teams.</p>
+                                <p class="experience-specifics">• Support customer visits, product demonstrations, and solution development.</p>
+                                <p class="experience-specifics">• Regularly present monthly product updates to the sales team to strengthen product knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-main-lower">
+                        <div class="work-experience-education">
+                            <p class="education-topic">EDUCATION</p>
+                            <div class="education-details">
+                                <p class="education-details-date">Jun 2017 - Apr 2022</p>
+                                <p class="education-details-brance">Electronics and Communications Engineering</p>
+                                <p class="education-details-uni">Rajamangala University of Technology Krungthep</p>
+                                <div class="education-details-further">
+                                    <p>• GPA: 3.58</p>
+                                    <p>• Thesis: Smoke Detection and Notification System</p>
+                                </div>
+
+                                <div class="education-details-divider"></div>
+
+                                <p class="education-details-date">Nov 2020 - Mar 2021</p>
+                                <p class="education-details-internship">Internship</p>
+                                <p class="education-details-proen">PROEN Corp Public Company Limited.</p>
+                                <div class="education-details-further">
+                                    <p>• Mini Project: Temperature Monitoring with Grafana</p>
+                                    <p>• Role: General Assistance with Data Center Rack and Server Operations</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="additional-info">
+                            <p class="additional-topic">ADDITIONAL INFORMATION</p>
+                            <div class="additional-info-p">
+                                <p class="additional-info-topic">• <strong>Technical Skills:</strong></p>
+                                    <p class="additional-info-sub">◦ <strong>Embedded:</strong></p>
+                                        <p class="additional-info-sub-1">MCU | Analog | Power | Interface | Connectivity | CapSense</p>
+                                    <p class="additional-info-sub">◦ <strong>Programming:</strong></p>
+                                        <p class="additional-info-sub-1">Embedded C, MPLAB X, MCC, Arduino</p>
+                                    <p class="additional-info-sub">◦ <strong>Web Development:</strong></p>
+                                        <p class="additional-info-sub-1">HTML, CSS</p>
+
+                                <div class="additional-info-divider"></div>
+
+                                <p class="additional-info-topic">• <strong>Languages:</strong></p>
+                                    <p class="additional-info-sub">◦ Thai (native language)</p>
+                                    <p class="additional-info-sub">◦ Beginner English Level</p>
+                                
+                                <div class="additional-info-divider"></div>
+
+                                <p class="additional-info-topic">• <strong>Other:</strong> <span style="color: rgb(68, 91, 124);"> Drawing</span></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>© 2026 Kanlayanee</p>
+            <p>Open to opportunities • Let’s connect</p>
+        </footer>
+
+    </section>
+
+    
+    <script>
+        // ฟังก์ชันเปิด-ปิดเมนูเดิมของคุณ
+        function toggleMenu() {
+            var x = document.getElementById("navLinks");
+            x.classList.toggle("active");
+        }
+    
+        // เพิ่มส่วนนี้: สั่งให้ปิดเมนูเมื่อมีการ Scroll หน้าจอ
+        window.onscroll = function() {
+            var x = document.getElementById("navLinks");
+            if (x.classList.contains("active")) {
+                x.classList.remove("active");
+            }
+        };
+    </script>
+    
+</body>
+
+</html>
