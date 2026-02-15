@@ -139,19 +139,17 @@
 
     
     <script>
-        // ฟังก์ชันเปิด-ปิดเมนูเดิมของคุณ
         function toggleMenu() {
-            var x = document.getElementById("navLinks");
-            x.classList.toggle("active");
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
         }
-    
-        // เพิ่มส่วนนี้: สั่งให้ปิดเมนูเมื่อมีการ Scroll หน้าจอ
-        window.onscroll = function() {
-            var x = document.getElementById("navLinks");
-            if (x.classList.contains("active")) {
-                x.classList.remove("active");
+
+         window.addEventListener('scroll', () => {
+            const navLinks = document.getElementById("navLinks");
+            if (navLinks.classList.contains("active")) {
+                navLinks.classList.remove("active");
             }
-        };
+        }, { passive: true });
     </script>
     
 </body>
